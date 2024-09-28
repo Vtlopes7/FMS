@@ -46,12 +46,12 @@
                         <a class="nav-link" href="{% url 'sair' %}">Sair</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}" method="post">Sigfis</a> 
+                        <a class="nav-link" href="{% url 'sigfis' %}" method="post">Sigfis</a> 
                             {% csrf_token %}
                                                                
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="{% url 'Recepção' %}">Recepção</a>
                     </li>
                 </ul>
             </div>
