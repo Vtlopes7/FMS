@@ -71,26 +71,34 @@
 
 <div class="container">
     <br>
-    <br>
-    <h1 class="mb-4">Monitoramento</h1>
+    <h1 class="mb-4 text-center">Monitoramento</h1>
 
     <form method="GET" action="">
-        <div class="row mb">
+        <div class="row">
             <div class="col-md">
-                <input type="text" name="empresa" class="form-control" placeholder="Filtrar por Empresa" value="{{ empresa_filtro }}">
-                
+                <input type="text" name="processo" class="form-control" placeholder="Processo" value="{{ processo_filtro }}">
             </div>
             <div class="col-md">
-                <input type="text" name="empresa" class="form-control" placeholder="Filtrar por Unidade" value="{{ unidade_filtro }}">
-                
+                <input type="text" name="empresa" class="form-control" placeholder="Empresa" value="{{ empresa_filtro }}">                
             </div>
-            <div class="col-md-2">
-                <button type="submit" class="btn btn-primary">Filtrar</button>
+            <div class="col-md">
+                <input type="text" name="unidade" class="form-control" placeholder="Unidade" value="{{ unidade_filtro }}">                
+            </div>
+            <div class="col-md">
+                <input type="text" name="setor" class="form-control" placeholder="Setor" value="{{ setor_filtro }}">                
+            </div>
+            <div class="col-md">
+                <input type="text" name="procedimento" class="form-control" placeholder="Procedimento" value="{{ procedimento_filtro }}">                
+            </div>
+            <div class="col-md">
+                <button type="submit" class="btn btn-outline-primary">Filtrar</button>
+                <button type="submit" class="btn btn-outline-secondary">Limpar Filtro</button>
 
                 
             </div>
         </div>
     </form>
+    <hr>
 
       
        <!-- Verifica se há processos cadastrados -->
