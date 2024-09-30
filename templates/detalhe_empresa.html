@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Processo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1>Detalhes da Empresa</h1>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">Código da Empresa:</th>
+                    <td>{{ empresa.cod_name }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Razão Social:</th>
+                    <td>{{ empresa.razao_social }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">CNPJ:</th>
+                    <td>{{ empresa.cnpj }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Logradouro:</th>
+                    <td>{{ empresa.logradouro }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Complemento:</th>
+                    <td>{{ empresa.complemento }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bairro:</th>
+                    <td>{{ empresa.bairro }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cidade:</th>
+                    <td>{{ empresa.cidade }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Estado:</th>
+                    <td>{{ empresa.estado }}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+
+    <a href="{% url 'home' %}" class="btn btn-outline-primary">Voltar</a>
+</div>
+
+</body>
+</html>

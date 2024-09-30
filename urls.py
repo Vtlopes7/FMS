@@ -21,9 +21,14 @@ from FMS import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('processo/', include('processos.urls')),
     path('home/', views.home, name='home'),
-    path('auth/', include('usuarios.urls')),
-    path('Recepção/', views.Recepção, name='Recepção')
+    path('Recepção/', include('Recepção.urls')),
+    path('auth/login/', views.login, name='login'),
+    path('cadastro/', views.cadastro, name='cadastro'),
+    path('valida_cadastro/', views.valida_cadastro, name='valida_cadastro'),
+    path('valida_login/', views.valida_login, name='valida_login'),
+    path('sair/', views.sair, name='sair'),
+    path('sigfis/', views.Sigfis, name='sigfis'),
+
 
 ]
