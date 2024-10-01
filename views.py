@@ -75,15 +75,9 @@ def valida_cadastro(request):
         return redirect('/cadastro/?status=5')
 
 
-
-
 def sair(request):
     request.session.flush()
     return redirect('/auth/login/')
-
-
-
-
 
 
 def Sigfis(request):

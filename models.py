@@ -10,7 +10,7 @@ class Usuario(models.Model):
         return self.nome
 
 
-class Empresa(models.Model):
+#class Empresa(models.Model):
     # empresa
     # razao_social
     # CNPJ
@@ -21,13 +21,13 @@ class Empresa(models.Model):
     # cidade
     # estado
 
-    pass
+    #pass
 
-    def __str__(self):
-        return self.empresa
+    #def __str__(self):
+        #return self.empresa
 
 
-class Processo(models.Model):
+#class Processo(models.Model):
     # processo
     # empresa
     # valor
@@ -44,13 +44,13 @@ class Processo(models.Model):
     # relatório1
     # relatorio2
 
-    pass
+    #pass
 
-    def __str__(self):
-        return self.processo
+    #def __str__(self):
+       # return self.processo
 
 
-class Notas(models.Model):
+#class Notas(models.Model):
     # processo
     # numero_nota
     # emissao
@@ -62,26 +62,28 @@ class Notas(models.Model):
     # elemento_despesa
     # fonte
 
-    pass
+    #pass
 
-    def __str__(self):
-        return self.numero_nota
+    #def __str__(self):
+       # return self.numero_nota
 
 
 class Unidade(models.Model):
-    # codigo
-    # nome da unidade
-    # endereço
-    pass
+    codigo = models.CharField(max_length=10, blank=True, null=True)
+    nome_unidade = models.CharField(max_length=10, blank=True, null=True)
+    endereço = models.CharField(max_length=120, blank=True, null=True)
+    bairro = models.CharField(max_length=50, blank=True, null=True)
+    CEP = models.CharField(max_length=10, blank=True, null=True)
 
     def __str__(self):
         return self.nome_unidade
 
 
-class Fiscais(models.Model):
+#class Fiscais(models.Model):
     # nome_fiscal
     # Matrícula
-    pass
+    #pass
 
-    def __str__(self):
-        return self.nome_fiscal
+   # def __str__(self):
+        #return self.nome_fiscal
+#
